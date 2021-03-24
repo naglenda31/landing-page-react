@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //create your first component
-export function MyNav(props) {
+export function Navbar(props) {
 	const renderNav = props.menu.map((item, index) => {
 		return (
 			<li className="nav-item" key={index}>
@@ -38,12 +38,12 @@ export function MyNav(props) {
 	);
 }
 
-MyNav.defaultProps = {
+Navbar.defaultProps = {
 	menu: [],
 	brand: "Bootstrap"
 };
 
-MyNav.propTypes = {
+Navbar.propTypes = {
 	menu: PropTypes.array,
 	brand: PropTypes.string
 };

@@ -1,7 +1,8 @@
 import React from "react";
-import { MyNav } from "./navbar";
-import { MyJumbotron } from "./jumbotron";
+import { Navbar } from "./navbar";
+import { Jumbotron } from "./jumbotron";
 import { Footer } from "./footer";
+import { Card } from "./card";
 
 //create your first component
 export function Home() {
@@ -13,12 +14,43 @@ export function Home() {
 	];
 	return (
 		<div>
-			<MyNav menu={menuLinks} brand="Start Bootstrap" />
-			<MyJumbotron
+			<Navbar menu={menuLinks} brand="Start Bootstrap" />
+			<Jumbotron
 				title="A Warm Welcome!"
 				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla fermentum lacinia. Aliquam turpis leo, interdum quis lectus et, vestibulum cursus lectus."
-				buttonURL="/"
+				buttonUrl="/"
 				buttonLabel="Call to action!"
+			/>
+			<Card
+				imageUrl="http://placehold.jp/500x325.png"
+				title="Card title"
+				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
+				cardButtonUrl="/"
+				cardButtonLabel="Find Out More!"
+			/>
+
+			<Card
+				imageUrl="http://placehold.jp/500x325.png"
+				title="Card title"
+				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
+				cardButtonUrl="/"
+				cardButtonLabel="Find Out More!"
+			/>
+
+			<Card
+				imageUrl="http://placehold.jp/500x325.png"
+				title="Card title"
+				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
+				cardButtonUrl="/"
+				cardButtonLabel="Find Out More!"
+			/>
+
+			<Card
+				imageUrl="http://placehold.jp/500x325.png"
+				title="Card title"
+				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
+				cardButtonUrl="/"
+				cardButtonLabel="Find Out More!"
 			/>
 			<Footer copyright="Copyright © Your Website 2021" />
 		</div>
