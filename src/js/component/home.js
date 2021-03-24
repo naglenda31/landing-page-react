@@ -12,6 +12,42 @@ export function Home() {
 		{ label: "Services", url: "#services" },
 		{ label: "Contact", url: "#contact" }
 	];
+
+	const cardContent = [
+		{
+			imageUrl: "http://placehold.jp/500x325.png",
+			title: "Card Title",
+			text:
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl a magna faucibus euismod. Curabitur ac nisl erat. Donec volutpat orci at eleifend aliquet.",
+			buttonUrl: "/",
+			buttonLabel: "Find Out More!"
+		},
+		{
+			imageUrl: "http://placehold.jp/500x325.png",
+			title: "Card Title",
+			text:
+				"Aliquam semper risus sit amet orci congue maximus. Donec laoreet molestie egestas. Ut vel vehicula odio. Duis id sollicitudin orci, iaculis euismod mauris. Quisque egestas vitae odio vel interdum. ",
+			buttonUrl: "/",
+			buttonLabel: "Find Out More!"
+		},
+		{
+			imageUrl: "http://placehold.jp/500x325.png",
+			title: "Card Title",
+			text:
+				"Nulla a libero scelerisque, iaculis enim eget, mattis mauris. Phasellus eu eleifend odio, eu faucibus nulla. In vitae tellus vel eros egestas sollicitudin. Ut sit amet tempor ante, at imperdiet felis.",
+			buttonUrl: "/",
+			buttonLabel: "Find Out More!"
+		},
+		{
+			imageUrl: "http://placehold.jp/500x325.png",
+			title: "Card Title",
+			text:
+				"Vivamus quis libero ante. Mauris lacus orci, malesuada at est eu, mattis bibendum libero. Praesent congue nibh eget orci auctor, quis ornare justo aliquam.",
+			buttonUrl: "/",
+			buttonLabel: "Find Out More!"
+		}
+	];
+
 	return (
 		<div>
 			<Navbar menu={menuLinks} brand="Start Bootstrap" />
@@ -21,37 +57,12 @@ export function Home() {
 				buttonUrl="/"
 				buttonLabel="Call to action!"
 			/>
-			<Card
-				imageUrl="http://placehold.jp/500x325.png"
-				title="Card title"
-				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
-				cardButtonUrl="/"
-				cardButtonLabel="Find Out More!"
-			/>
+			<div className="container">
+				<div className="row mb-3">
+					<Card cardContent={cardContent} />
+				</div>
+			</div>
 
-			<Card
-				imageUrl="http://placehold.jp/500x325.png"
-				title="Card title"
-				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
-				cardButtonUrl="/"
-				cardButtonLabel="Find Out More!"
-			/>
-
-			<Card
-				imageUrl="http://placehold.jp/500x325.png"
-				title="Card title"
-				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
-				cardButtonUrl="/"
-				cardButtonLabel="Find Out More!"
-			/>
-
-			<Card
-				imageUrl="http://placehold.jp/500x325.png"
-				title="Card title"
-				cardText="Etiam pharetra venenatis diam. Proin orci ante, feugiat non feugiat sit amet, rhoncus sed nulla. Ut facilisis quis quam quis molestie. Etiam gravida laoreet porttitor."
-				cardButtonUrl="/"
-				cardButtonLabel="Find Out More!"
-			/>
 			<Footer copyright="Copyright © Your Website 2021" />
 		</div>
 	);

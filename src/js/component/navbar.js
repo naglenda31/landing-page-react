@@ -14,7 +14,7 @@ export function Navbar(props) {
 		);
 	});
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav className="navbar navbar-expand- navbar-dark bg-dark">
 			<a className="navbar-brand" href="#">
 				{props.brand}
 			</a>

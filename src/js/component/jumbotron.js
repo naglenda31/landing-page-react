@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 //create your first component
 export function Jumbotron(props) {
 	return (
-		<div className="container-fluid my-4">
-			<div className="jumbotron mx-3 mb-0">
+		<div className="container">
+			<div className="jumbotron">
 				<h1 className="display-1">{props.title}</h1>
 				<p className="lead">{props.description}</p>
 				<a
