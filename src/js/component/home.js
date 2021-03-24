@@ -1,6 +1,7 @@
 import React from "react";
 import { MyNav } from "./navbar";
 import { MyJumbotron } from "./jumbotron";
+import { Footer } from "./footer";
 
 //create your first component
 export function Home() {
@@ -19,6 +20,7 @@ export function Home() {
 				buttonURL="/"
 				buttonLabel="Call to action!"
 			/>
+			<Footer copyright="Copyright © Your Website 2021" />
 		</div>
 	);
 }
