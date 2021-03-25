@@ -14,25 +14,27 @@ export function Navbar(props) {
 		);
 	});
 	return (
-		<nav className="navbar navbar-expand- navbar-dark bg-dark">
-			<a className="navbar-brand" href="#">
-				{props.brand}
-			</a>
-			<button
-				className="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"></span>
-			</button>
+		<nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+			<div className="container">
+				<a className="navbar-brand" href="#">
+					{props.brand}
+				</a>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				</button>
 
-			<div
-				className="collapse navbar-collapse"
-				id="navbarSupportedContent">
-				<ul className="navbar-nav ml-auto">{renderNav}</ul>
+				<div
+					className="collapse navbar-collapse"
+					id="navbarSupportedContent">
+					<ul className="navbar-nav ml-auto">{renderNav}</ul>
+				</div>
 			</div>
 		</nav>
 	);

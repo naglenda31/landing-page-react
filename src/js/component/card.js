@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 export function Card(props) {
 	const renderCard = props.cardContent.map((card, index) => {
 		return (
-			<div className="col-lg-3 col-md-6 col-sm-12" key={index}>
-				<div className="card mb-xs-3 text-center">
+			<div className="col-lg-3 col-md-6 col-12 mb-3" key={index}>
+				<div className="card text-center">
 					<img
 						src={card.imageUrl}
 						className="card-img-top"
