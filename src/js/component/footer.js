@@ -10,6 +10,10 @@ export function Footer(props) {
 	);
 }
 
+Footer.defaultProps = {
+	copyright: "Copyrights"
+};
+
 Footer.propTypes = {
 	copyright: PropTypes.string
 };

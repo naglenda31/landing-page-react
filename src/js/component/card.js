@@ -28,6 +28,10 @@ export function Card(props) {
 	return renderCard;
 }
 
+Card.defaultProps = {
+	cardContent: []
+};
+
 Card.propTypes = {
 	cardContent: PropTypes.array
 };
